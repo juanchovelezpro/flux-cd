@@ -3,10 +3,6 @@ kind: HelmRelease
 metadata:
   name: rabbitmq
 spec:
-  chart:
-    spec:
-      sourceRef:
-        namespace: dev1
   values:
     replicaCount: 3
     ingress:
