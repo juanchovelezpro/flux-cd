@@ -2,7 +2,6 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: rabbitmq
-  namespace: rabbitmq
 spec:
   chart:
     spec:
@@ -13,3 +12,12 @@ spec:
         name: bitnami
       version: 10.1.13
   interval: 1m0s
+  values: 
+    nameOverride: "rabbitmq"
+    fullnameOverride: "rabbitmq"
+    plugins: "rabbitmq_management rabbitmq_peer_discovery_k8s"
+    extraPlugins: "rabbitmq_auth_backend_ldap rabbitmq_shovel rabbitnq_shovel_management"
+    ingress:
+      enabled: true
+      path: /
+      pathType: Prefix
