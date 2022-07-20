@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 - ../../../addons/sources
 - namespaces.yaml
-- rabbitmq.yaml
+#- rabbitmq.yaml
