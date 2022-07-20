@@ -1,0 +1,10 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: rabbitmq
+spec:
+  values:
+    replicaCount: 3
+    ingress:
+      hostname: rabbitmq.dev1.project.com
+      ingressClassName: "nginx-dev1"
