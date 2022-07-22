@@ -4,4 +4,4 @@ resources:
 - ../../../addons/sources
 - namespaces.yaml
 - sealed-secrets.yaml
-#- rabbitmq.yaml
+- rabbitmq.yaml

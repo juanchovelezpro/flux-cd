@@ -16,6 +16,10 @@ spec:
   values: 
     nameOverride: "rabbitmq"
     fullnameOverride: "rabbitmq"
+    auth:
+      username: admin
+      existingPasswordSecret: "rabbitmq-secrets"
+      existingErlangSecret: "rabbitmq-secrets"
     plugins: "rabbitmq_management rabbitmq_peer_discovery_k8s"
     extraPlugins: "rabbitmq_auth_backend_ldap rabbitmq_shovel rabbitnq_shovel_management"
     ingress:
