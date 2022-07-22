@@ -1,0 +1,38 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: prometheus-stack
+  namespace: monitoring
+spec:
+  chart:
+    spec:
+      chart: kube-prometheus-stack
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: prometheus-community
+        namespace: flux-system
+      version: 36.6.2
+  interval: 1m0s
+  values:
+    grafana:
+      enabled: true
+      admin:
+        existingSecret: "grafana-credentials"
+        userKey: admin-user
+        passwordKey: admin-password
+      envFromSecret: grafana-db-credentials
+      grafana.ini:
+        database:
+          type: mysql
+          host: $__env{DB_HOST}
+          name: grafana
+          user: $__env{DB_USER}
+          password: $__env{DB_PASS}
+      imageRenderer:
+        enabled: true
+    prometheus:
+      enabled: true
+      prometheusSpec:
+        retention: 5d
