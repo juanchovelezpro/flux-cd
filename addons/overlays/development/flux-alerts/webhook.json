@@ -3,20 +3,20 @@
   "apiVersion": "bitnami.com/v1alpha1",
   "metadata": {
     "name": "discord-webhook",
-    "namespace": "default",
+    "namespace": "flux-system",
     "creationTimestamp": null
   },
   "spec": {
     "template": {
       "metadata": {
         "name": "discord-webhook",
-        "namespace": "default",
+        "namespace": "flux-system",
         "creationTimestamp": null
       },
       "data": null
     },
     "encryptedData": {
-      "address": "AgCpNQbSLAbtW4TwJ58+BS8rYDBIuZWl364XTU2THFw15SvsZ5vW5CPyZHUscnaZcUfBV//yIXMPUMJbIOFA+xaFZEIY+kuanU7HmWOFzKdeBVnvRbgcy+rfG2jQpebx1dXc9xpilew8f92x0uT0TuunZIiZ8+79m5qnp5JZ1bP4p4HGfnsmEqkfP3NE8DCHhFfLMBWjvSd3ThifmVjslUVFGy0arg4LXd8Gru0hKn64a1tqBMFoAe2CTXBgv7NSsgbUZ+wJhA4H+LSQP/BizLWNGAM43GU0DO5bWo4Onzp2UBxFODScAxibYyGSFgGSImyKDZ3MEjFqCFMAko2++y19C7C6VplhRfuegXC0ceRR3weZ7CDsT3t1ulzVg0lppE+eLPji+yCn0P0d7q25VoPieZLTUk8/nxPrtS5OZAs1GPLudr72Ta1bGa7D2qDAmcsS6pvg+ohHDRkG7mcmY2pzoTL2pNwnL0eHqkiupcikNs19EimWHNn9ijef6GC2YZFqDOi7uXzIlJ2hym2se3P1+7L1nIr2GnO+YYoHShM4zrfQVRgVpFP4RX8+s91znUm7Fkj/hsZ+1Mt7mmgWepwebuck2I504F8NOrhLA+4OMEgbdiAivglpmn7bmJLIx/KSgHYR1Z5SoPWkFyUI0kGSHG64YQiZ/9g8RLqeMqkMDh50NeB6Q3jSMG5JhMKRuG8prKGltaATPbwFOX6cXmJwBLy7Ms89yp/Rw7wJfDqeG8c76ccRQMtpdJ5nI98vhSMf9+OrzEIX8lGC2zXJH6Pg+s80nd5Sx0mXW3AKmOtEJufjhwvKZ6QMH3OgKU0Lr3l59vYibvSlnaOiAk/lYJiI+tKy7797KaI="
+      "address": "AgCnDLM3lJ4+R1OOnru0+stpNK6QtSdlHbgHsXK25QFwn+CQOa3Z8V/BfulJ9BX7qlWJRb7sb9SV9ZnSxL/7GoufRIlIm+1qwMK2jKFrQ7ZJjnlv1v3uV5h6t8pFCbYpDX74spwbKJXbGiMBRfWXWwN6Bv865wIbC/mesMPCACTryD8ONll+XhRloLHKqH4+y58zCycI8TlRI7MqSPU3UkHpCPBorSHHc4HT5IND1nx9Hx3lhziPvhMAJ+uO2JSy2rNdz8Ez31FKbVe76TY6+KikvzcQgYCofkgBgDf7UpiHfJcIRQSOnEEkuUbz1myCy+dxz7qUxCa06AXb8oYvMz0KVMLEjwSy7NoAx/rY1lBrbUEaShS8sKETNXcQrt9ryl5Se3dtyOrvE6PVgka+0VYLn2FOJM/AHs6nwcYkGJ93+NVUWEL2l0BbGQbfdy3PiURs9MGPBi702q2b+NlPdSgsssK42F6lk6O4OeMOvg3xuz9Q6ct1N4FRbDDho/QAXlTSWNJ/73K6rCKl4fc+1Yke2riE0Csn2BHICwv+dNUcf0MbLLkzZTuTzeHIRahMvWS12w766rZcky8ltJwvbZUC/6RHuAoQs1Jw45sUCZFE8qrNr3uoiZKGLiVnukZsoWzUpsWRiu5W67WE6T1TXJTLt+8iYusFLTpHdQaJ7rlTOnwPjYR3DtNif8XuMazyBSysiqQvgtqv9ECbqprHo/qMib1yMkF/P+b/d6jhXn0vv8EIQ2qt3ZIwMjCnkSTO8MfM7IkGBx+mVNcOI6UQwhoHqXCPYCz0hu4rYBtoHEv7ZHf8N3IpumTL1qee2WvYyiDtptg3nLRFzjVXL6zSh2tyHwMOq37t/hQ="
     }
   }
 }
