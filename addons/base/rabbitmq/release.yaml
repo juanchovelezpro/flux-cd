@@ -21,7 +21,7 @@ spec:
       existingPasswordSecret: "rabbitmq-secrets"
       existingErlangSecret: "rabbitmq-secrets"
     plugins: "rabbitmq_management rabbitmq_peer_discovery_k8s"
-    extraPlugins: "rabbitmq_auth_backend_ldap rabbitmq_shovel rabbitnq_shovel_management"
+    extraPlugins: "rabbitmq_auth_backend_ldap rabbitmq_shovel rabbitmq_shovel_management"
     ingress:
       enabled: true
       path: /
