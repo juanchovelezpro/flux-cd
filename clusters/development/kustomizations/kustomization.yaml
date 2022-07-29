@@ -4,6 +4,6 @@ resources:
 - ../../../addons/sources
 - namespaces.yaml
 - sealed-secrets.yaml
-- flux-alerts.yaml
-- prometheus-stack.yaml
-- rabbitmq.yaml
+# - flux-alerts.yaml
+# - prometheus-stack.yaml
+# - rabbitmq.yaml
