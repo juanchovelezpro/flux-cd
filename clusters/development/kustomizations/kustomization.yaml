@@ -5,5 +5,5 @@ resources:
 - namespaces.yaml
 - sealed-secrets.yaml
 - flux-alerts.yaml
-#- prometheus-stack.yaml
+- prometheus-stack.yaml
 - rabbitmq.yaml
