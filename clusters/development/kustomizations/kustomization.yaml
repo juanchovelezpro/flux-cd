@@ -6,4 +6,5 @@ resources:
 - sealed-secrets.yaml
 - flux-alerts.yaml
 - prometheus-stack.yaml
+- grafana-loki.yaml
 - rabbitmq.yaml

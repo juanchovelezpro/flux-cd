@@ -5,5 +5,5 @@ resources:
 - grafana-db-credentials.json
 - ../../../base/prometheus-stack
 
-patchesStrategicMerge:
-- release-patch.yaml
+# patchesStrategicMerge:
+# - release-patch.yaml

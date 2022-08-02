@@ -4,7 +4,7 @@ metadata:
   name: rabbitmq
 spec:
   values:
-    replicaCount: 1
+    replicaCount: 3
     ingress:
       hostname: rabbitmq.dev1.devops.com
       ingressClassName: "nginx-dev1"

@@ -13,7 +13,7 @@ spec:
         kind: HelmRepository
         name: prometheus-community
         namespace: flux-system
-      version: 36.6.2
+      version: 39.0.0
   interval: 1m0s
   values:
     grafana:

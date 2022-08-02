@@ -4,3 +4,4 @@ resources:
 - bitnami.yaml
 - bitnami-labs.yaml
 - prometheus-community.yaml
+- grafana.yaml
