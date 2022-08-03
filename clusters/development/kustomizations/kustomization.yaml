@@ -7,4 +7,5 @@ resources:
 - flux-alerts.yaml
 - prometheus-stack.yaml
 - grafana-loki.yaml
+- promtail.yaml
 - rabbitmq.yaml
