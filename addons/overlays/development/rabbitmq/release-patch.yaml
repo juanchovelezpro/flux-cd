@@ -7,4 +7,3 @@ spec:
     replicaCount: 3
     ingress:
       hostname: rabbitmq.dev1.devops.com
-      ingressClassName: "nginx-dev1"
