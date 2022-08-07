@@ -32,6 +32,8 @@ spec:
           password: $__env{DB_PASS}
       imageRenderer:
         enabled: true
+      ingress:
+        enabled: true
     prometheus:
       enabled: true
       prometheusSpec:
