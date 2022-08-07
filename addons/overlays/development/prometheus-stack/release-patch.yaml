@@ -5,6 +5,11 @@ metadata:
   namespace: monitoring
 spec:
   values:
+    grafana:
+      ingress:
+        ingressClassName: nginx
+        hosts:
+          - grafana.dev1.devops.com
     prometheus:
       prometheusSpec:
         externalLabels:
