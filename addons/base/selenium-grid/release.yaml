@@ -1,0 +1,31 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: selenium-grid
+  namespace: selenium-grid
+spec:
+  chart:
+    spec:
+      chart: selenium-grid
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: selenium
+        namespace: flux-system
+      version: 0.9.0
+  interval: 1m0s
+  values:
+    firefoxNode:
+      enabled: false
+    edgeNode:
+      enabled: false
+    chromeNode:
+      extraEnvironmentVariables:
+      - name: SCREEN_WIDTH
+        value: "1920"
+      - name: SCREEN_HEIGHT
+        value: "1080"
+      replicas: 3
+      
+

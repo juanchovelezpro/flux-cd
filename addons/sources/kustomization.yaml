@@ -6,3 +6,4 @@ resources:
 - bitnami-labs.yaml
 - prometheus-community.yaml
 - grafana.yaml
+- selenium-grid.yaml
