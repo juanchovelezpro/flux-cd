@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: selenium-hub
+  namespace: selenium-grid
 spec:
   ingressClassName: nginx
   rules:
@@ -15,5 +16,3 @@ spec:
               number: 4444
         path: /
         pathType: Prefix
-status:
-  loadBalancer: {}
