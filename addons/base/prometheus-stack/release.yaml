@@ -35,6 +35,8 @@ spec:
       ingress:
         enabled: true
     prometheus:
-      enabled: true
       prometheusSpec:
         retention: 5d
+        podMonitorSelector:
+          matchLabels:
+            app.kubernetes.io/component: monitoring
