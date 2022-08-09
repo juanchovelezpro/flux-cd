@@ -1,0 +1,26 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: prometheus-stack
+  namespace: flux-system
+spec:
+  values:
+    grafana:
+      ingress:
+        ingressClassName: nginx
+        hosts:
+          - grafana.qa1.devops.com
+      grafana.ini:
+        server:
+          domain: grafana.qa1.devops.com
+    prometheus:
+      ingress:
+        enabled: true
+        ingressClassName: nginx
+        hosts:
+          - prometheus.qa1.devops.com
+      prometheusSpec:
+        externalLabels:
+          cluster: development
+      

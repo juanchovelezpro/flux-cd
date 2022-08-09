@@ -1,0 +1,12 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: promtail
+  namespace: monitoring
+spec:
+  values:
+    config:
+      clients:
+        - url: http://loki-loki-distributed-gateway/loki/api/v1/push
+
