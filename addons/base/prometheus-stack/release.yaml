@@ -53,4 +53,4 @@ spec:
             app.kubernetes.io/component: monitoring
         serviceMonitorSelector:
           matchLabels:
-            name: rabbit-metrics
+            app.kubernetes.io/name: rabbitmq
