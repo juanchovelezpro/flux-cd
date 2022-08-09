@@ -4,7 +4,7 @@ resources:
 - ../../../addons/sources
 - namespaces.yaml
 - sealed-secrets.yaml
-#- ingress-nginx.yaml
-- prometheus-stack.yaml
+- ingress-nginx.yaml
+#- prometheus-stack.yaml
 - promtail.yaml
 - grafana-loki.yaml
