@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- grafana-credential.json
+- grafana-credentials.json
 - grafana-db-credentials.json
 - grafana-smtp-credentials.json
 - ../../../base/prometheus-stack

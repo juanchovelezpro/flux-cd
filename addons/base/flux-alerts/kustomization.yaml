@@ -1,5 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- webhook.json
-- ../../../base/flux-alerts
+- flux-provider.yaml
+- flux-error-alert.yaml
+- flux-info-alert.yaml
