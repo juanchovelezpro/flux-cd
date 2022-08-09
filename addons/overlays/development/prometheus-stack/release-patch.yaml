@@ -10,6 +10,9 @@ spec:
         ingressClassName: nginx
         hosts:
           - grafana.dev1.devops.com
+      grafana.ini:
+        server:
+          domain: grafana.dev1.devops.com
     prometheus:
       prometheusSpec:
         externalLabels:

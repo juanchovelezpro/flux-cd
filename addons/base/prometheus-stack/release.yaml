@@ -32,7 +32,6 @@ spec:
           password: $__env{DB_PASS}
         server:
           protocol: http
-          domain: grafana.dev1.devops.com
           root_url: "%(protocol)s://%(domain)s/"
       imageRenderer:
         enabled: true
