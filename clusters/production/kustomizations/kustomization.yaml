@@ -5,3 +5,4 @@ resources:
 - namespaces.yaml
 - ingress-nginx.yaml
 - prometheus-stack.yaml
+- promtail.yaml
