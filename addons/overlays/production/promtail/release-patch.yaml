@@ -9,4 +9,4 @@ spec:
     config:
       clients:
         - url: http://loki-loki-distributed-gateway/loki/api/v1/push
-          tenant-id: soarian-production
+          tenant_id: soarian-production
