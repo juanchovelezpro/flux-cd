@@ -12,7 +12,7 @@ spec:
           tenant_id: soarian-development
           basic_auth:
             username: admin
-            password-file: /etc/loki-credentials
+            password_file: /etc/loki-credentials
     
     extraVolumes:
       - name: my-secret
