@@ -12,4 +12,14 @@ spec:
           tenant_id: soarian-development
           basic_auth:
             username: admin
-            password: secret
+            password-file: /etc/loki-credentials
+    
+    extraVolumes:
+      - name: my-secret
+        secret:
+          secretName: loki-credentials
+    
+    extraVolumeMounts:
+      - name: my-secret
+        mountPath: "/etc/loki-credentials"
+        readOnly: true
