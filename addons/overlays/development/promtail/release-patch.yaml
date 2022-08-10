@@ -10,3 +10,6 @@ spec:
       clients:
         - url: http://loki-gateway.devops.com/loki/api/v1/push
           tenant_id: soarian-development
+          basic_auth:
+            username: admin
+            password: hola
