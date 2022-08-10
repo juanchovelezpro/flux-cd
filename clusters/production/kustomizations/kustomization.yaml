@@ -4,3 +4,4 @@ resources:
 - ../../../addons/sources
 - namespaces.yaml
 - ingress-nginx.yaml
+- prometheus-stack.yaml
