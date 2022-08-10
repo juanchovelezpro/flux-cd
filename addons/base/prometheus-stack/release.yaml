@@ -51,6 +51,6 @@ spec:
         podMonitorSelector:
           matchLabels:
             app.kubernetes.io/component: monitoring
-        serviceMonitorSelector:
-          matchLabels:
-            app.kubernetes.io/name: rabbitmq
+        # serviceMonitorSelector:
+        #   matchLabels:
+        #     app.kubernetes.io/name: rabbitmq
