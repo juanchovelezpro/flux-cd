@@ -22,5 +22,10 @@ spec:
       prometheusSpec:
         externalLabels:
           cluster: development
+        remoteWrite:
+        - url: http://mimir-gateway.devops.com/api/v1/push
+          headers:
+            X-Scope-OrgID: soarian-development
+      
       
       
