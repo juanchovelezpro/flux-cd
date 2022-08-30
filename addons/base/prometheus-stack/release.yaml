@@ -46,15 +46,12 @@ spec:
       ingress:
         enabled: true
     prometheus:
+      additionalServiceMonitors:
+        - name: "rabbitmq-monitor"
+          selector:
+            app.kubernetes.io/name: rabbitmq
       prometheusSpec:
         retention: 5d
         podMonitorSelector:
           matchLabels:
             app.kubernetes.io/component: monitoring
-        serviceMonitorSelector:
-          matchLabels:
-            app.kubernetes.io/name: rabbitmq
-        # serviceMonitorSelector:
-        #   matchLabels:
-        #     namespace: monitoring
-        #     app.kubernetes.io/name: rabbitmq
