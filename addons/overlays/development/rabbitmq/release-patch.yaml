@@ -8,3 +8,6 @@ spec:
     ingress:
       hostname: rabbitmq.dev1.devops.com
       ingressClassName: "nginx"
+    metrics:
+      serviceMonitor:
+        enabled: true
