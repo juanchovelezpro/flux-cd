@@ -51,10 +51,6 @@ spec:
         podMonitorSelector:
           matchLabels:
             app.kubernetes.io/component: monitoring
-        serviceMonitorSelectorNilUsesHelmValues: false
-        serviceMonitorSelector:
-          matchLabels:
-            app.kubernetes.io/managed-by: Helm
         serviceMonitorNamespaceSelector:
           matchLabels:
             kustomize.toolkit.fluxcd.io/name: flux-system
