@@ -54,4 +54,4 @@ spec:
         serviceMonitorSelectorNilUsesHelmValues: false
         serviceMonitorSelector:
           matchLabels:
-            app.kubernetes.io/name: rabbitmq
+            app.kubernetes.io/managed-by: Helm
